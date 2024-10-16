@@ -86,6 +86,7 @@ def main():
         if user_guesses == "LIST":
             character_names = [name.lower() for name in characters.keys()]
             print(f"Heres a list of all of the characters: {character_names}\n")
+            character_names = [name.upper() for name in characters.keys()]
         if user_guesses in character_names: 
             if user_guesses == selected_character and guess_counter < 1:
                     print(f"Wow first try is crazy. GG")
